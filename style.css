@@ -1,0 +1,342 @@
+* {
+  padding: 0;
+  @media (max-width: 480px) margin: 0;
+  text-decoration: none; /* Menghapus dekorasi text */
+}
+
+.main {
+  height: 100vh; /* Mengatur tinggi kontainer utama agar mengisi seluruh viewport (100% dari area yang terlihat). */
+  width: 100%; /* Membuat kontainer menjadi lebar penuh (100% lebar). */
+  background-color: #010101; /* Mengatur warna latar belakang menjadi, sebuah warna gelap.*/
+  position: relative; /* Menghapus dekorasi text */
+  margin: auto; /* Mencentang kontainer secara horizontal menggunakan margin auto. */
+}
+
+nav {
+  width: 84%; /* Mengatur lebar elemen navigasi menjadi 84% dari blok yang mengandungnya. */
+  margin: auto; /* Mencentang elemen navigasi secara horizontal menggunakan margin auto. */
+  padding: 20px 0; /* Menambahkan padding di bagian atas dan bawah elemen navigasi. */
+  display: flex; /* Menggunakan flexbox untuk mengatur secara horizontal dan menciptakan ruang antara elemen-elemennya. */
+  align-items: center; /* mengatur element flex secara vertikal*/
+  justify-content: space-between; /* mengatur element secara horizontal dengan jarak yang merata */
+}
+
+.logo {
+  color: white; /* Mengatur warna teks logo */
+  font-size: 30px; /* Mengatur ukuran font  */
+  text-transform: uppercase; /* Mengubah teks menjadi huruf kapital.*/
+  font-weight: bold; /* Mengatur ketebalan font menjadi tebal. */
+  cursor: pointer; /* Mengatur ketebalan font menjadi tebal.*/
+}
+
+span {
+  color: red; /* Mengatur warna teks pada elemen span */
+}
+
+nav ul li {
+  list-style: none; /* Menghapus tanda bullet default dari elemen daftar. */
+  display: inline-block; /* Menampilkan elemen daftar sebagai inline block.*/
+  margin: 10px 20px; /* Menambahkan margin di bagian atas dan bawah elemen daftar untuk membuat jarak. */
+}
+
+nav ul li a {
+  color: white; /* Mengatur warna teks anchor */
+  text-transform: uppercase; /* Mengubah teks menjadi huruf kapital.*/
+  transition: 0.5s; /* Menambahkan efek transisi dengan durasi 0,5 detik. */
+}
+
+nav ul li a:hover {
+  color: red; /* Mengubah warna teks anchor */
+  font-weight: bold; /* Mengatur ketebalan font menjadi tebal saat dihover. */
+  transition: 0.5s; /* Menambahkan efek transisi dengan durasi 0,5 detik. */
+}
+
+.content {
+  color: white; /* Mengatur warna teks konten  */
+  margin-left: 8%; /* Mengatur margin kiri menjadi 8% untuk penempatan. */
+  margin-top: 10%; /* Mengatur margin atas menjadi 10% untuk jarak antar elemen. */
+}
+
+.content h3 {
+  font-size: 22px; /*Mengatur ukuran font dari judul */
+  line-height: 22px; /* Mengatur tinggi baris dari judul */
+  letter-spacing: 1px; /*Menambahkan spasi antar huruf pada teks judul. */
+}
+
+.content h1 {
+  font-size: 50px; /* Mengatur ukuran font dari judul  */
+  margin-bottom: 10px; /* Menambahkan margin bawah untuk membuat jarak di bawah judul.*/
+}
+
+.content p {
+  color: #606163; /*Mengatur warna teks paragraf */
+  line-height: 22px; /* Mengatur tinggi baris paragraf menjadi 22px untuk jarak antar baris. */
+}
+
+.content a {
+  background-color: #212121; /* Mengatur warna latar belakang anchor  */
+  padding: 10px 18px; /* Menambahkan padding di bagian atas dan bawah anchor untuk jarak. */
+  color: #fff; /* Mengatur warna teks anchor menjadi putih. */
+  display: inline-block; /*Menampilkan anchor sebagai inline block. */
+  margin: 30px 0; /* Menambahkan margin di bagian atas dan bawah anchor untuk jarak. */
+  border-radius: 5px; /* Menerapkan sudut melengkung pada anchor untuk membuat sudut yang terbulat. */
+}
+
+.content a:hover {
+  color: red; /* Mengubah warna teks anchor menjadi merah saat dihover. */
+  border: 2px solid red; /*Menambahkan batas merah pada anchor saat dihover. */
+}
+
+.image {
+  width: 40%; /* Mengatur lebar kontainer gambar menjadi 40% dari blok yang mengandungnya. */
+  height: 80%; /* Mengatur tinggi kontainer gambar menjadi 80% dari blok yang mengandungnya. */
+  bottom: 0; /* Memposisikan kontainer gambar di bagian bawah blok yang mengandungnya. */
+  top: 100px; /* Mengatur posisi atas kontainer gambar sejauh 100px dari atas. */
+  right: 100px; /*Mengatur posisi kanan kontainer gambar sejauh 100px dari kanan. */
+  position: absolute; /* Memposisikan kontainer gambar secara absolut. */
+}
+
+.image img {
+  height: 100%; /* Mengatur tinggi gambar menjadi 100% dari kontainer gambar. */
+  position: absolute; /* Memposisikan gambar secara absolut. */
+  left: 50%; /* Memusatkan gambar secara horizontal menggunakan left: 50% dan transform: translateX(-50%). */
+  transform: translateX(-50%);
+  bottom: 0; /* Memposisikan gambar di bagian bawah menggunakan bottom: 0. */
+}
+
+.sosial {
+  margin-left: 8%; /* Mengatur margin kiri dari kontainer ikon media sosial menjadi 8% untuk penempatan. */
+  margin-top: 20px; /* Mengatur margin atas dari kontainer ikon media sosial menjadi 20px untuk jarak.*/
+}
+
+.sosial a {
+  font-size: 20px; /* Mengatur ukuran font ikon media sosial menjadi 20px. */
+  color: white; /*Mengatur warna ikon media sosial menjadi putih. */
+  margin-right: 20px; /* Menambahkan margin kanan untuk membuat jarak antara ikon-ikon tersebut.*/
+  display: inline-block; /* Menampilkan ikon media sosial sebagai inline block. */
+}
+
+.sosial a :hover {
+  color: red; /* Mengubah warna ikon media sosial menjadi merah saat dihover. */
+  border-bottom: 2px red; /* Menambahkan garis bawah merah pada ikon media sosial saat dihover. */
+}
+
+.profile {
+  width: 100%; /* Mengatur lebar menjadi 100%. */
+  padding: 100px 0; /* Memberikan padding sebesar 100px pada bagian atas dan bawah. */
+  background-color: #191919; /* Mengatur warna latar belakang  */
+}
+
+.profile-me {
+  width: 1130px; /* Mengatur lebar menjadi 1130px, tetapi tidak melebihi 95% lebar kontainer induk. */
+  max-width: 95%;
+  margin: 0 auto; /* Mengatur margin menjadi 0 auto untuk mengatur posisi elemen secara horizontal di tengah.*/
+  display: flex; /* Menggunakan flexbox untuk mengatur item secara horizontal dan sejajar secara vertikal.*/
+  align-items: center; /* Membuat element dalam menjadi sejajar secara vertikal */
+  justify-content: space-around; /* untuk membagi ruang dengan merata antara di antara elemen-elemen dalam */
+}
+
+.profile-me img {
+  height: auto; /* Mengatur tinggi gambar secara otomatis agar tetap proporsional. */
+  width: 430px; /*Mengatur lebar gambar menjadi 430px. */
+  border-radius: 10px; /* Memberikan sudut melengkung pada gambar dengan border-radius: 10px. */
+}
+
+.profile-text {
+  width: 550px; /* Mengatur lebar menjadi 550px. */
+}
+
+.profile-text h2 {
+  color: white; /* Mengatur warna teks */
+  font-size: 65px; /* Mengatur ukuran font */
+  text-transform: capitalize; /*Mengubah teks menjadi huruf kapital. */
+  margin-bottom: 20px; /* Memberikan margin bawah sebesar 20px */
+  border-bottom: 1px solid red; /* Memberikan garis bawah dengan ketebalan 1px dan warna merah.*/
+}
+
+.profile-text h5 {
+  color: white; /* Mengatur warna teks */
+  letter-spacing: 2px; /* Mengatur jarak antar huruf sebesar 2px. */
+  line-height: 28px; /* Mengatur jarak baris  */
+  font-size: 22px; /* Mengatur ukuran font */
+  margin-bottom: 25px; /* Memberikan margin bawah  */
+  text-transform: capitalize; /* Mengubah teks menjadi huruf kapital.*/
+}
+
+.profile-text p {
+  color: #fcfc; /* Mengatur warna teks */
+  letter-spacing: 1px; /* Mengatur jarak antar huruf  */
+  line-height: 28px; /* Mengatur jarak baris  */
+  font-size: 18px; /* Mengatur ukuran font menjadi 18px. */
+  margin-bottom: 45px; /* Memberikan margin bawah sebesar 45px. */
+  text-align: justify; /* Mengatur teks menjadi rata kanan-kiri  */
+}
+
+.button {
+  background-color: red; /* Mengatur warna latar belakang */
+  color: white; /* Mengatur warna teks  */
+  border: 2px solid white; /* Memberikan border dengan tebal 2px dan warna putih. */
+  font-weight: bold; /* Mengatur ketebalan font menjadi tebal. */
+  padding: 13px 30px; /* Memberikan padding sebesar 13px pada bagian atas dan bawah, serta 30px pada bagian kiri dan kanan. */
+  border-radius: 30px; /* Memberikan sudut melengkung pada tombol */
+  transition: 0.5s; /*Mengatur efek transisi selama 0.5 detik saat terjadi perubahan pada tombol. */
+}
+
+.button:hover {
+  background-color: transparent; /*Mengubah warna latar belakang menjadi transparan saat dihover. */
+  border: 2px solid red; /* Memberikan border dengan tebal 2px dan warna merah saat dihover. */
+  cursor: pointer; /* Mengubah penunjuk kursor menjadi tanda panah saat dihover. */
+}
+
+.service {
+  background: #101010; /*Mengatur warna latar belakang */
+  width: 100%; /* Mengatur lebar */
+  padding: 100px 0; /* Memberikan padding sebesar 100px pada bagian atas dan bawah. */
+}
+
+.title h2 {
+  color: white; /* Mengatur warna teks  */
+  font-size: 75px; /* Mengatur ukuran font */
+  width: 100%; /* Mengatur lebar */
+  margin-bottom: 30px auto; /*Memberikan margin bawah */
+  text-align: center; /*Mengatur teks menjadi rata tengah */
+}
+
+.box {
+  display: flex; /* mengatur item secara horizontal dan sejajar secara vertikal. */
+  justify-content: center; /* Mengatur item dalam agar terpusat secara horizontal */
+  align-items: center; /* Mengatur item dalam agar terpusat secara vertikal */
+  min-height: 400px; /* Memberikan tinggi minimal sebesar 400px. */
+}
+
+.card {
+  height: 365px; /* Mengatur tinggi  */
+  width: 270px; /* Mengatur lebar */
+  padding: 20px 35px; /* Memberikan padding sebesar 20px pada bagian atas dan bawah, serta 35px pada bagian kiri dan kanan. */
+  background: #141414; /* Mengatur warna latar belakang */
+  border-radius: 20px; /* Memberikan sudut melengkung pada elemen */
+  margin: 15px; /* Memberikan margin */
+  position: relative; /*Mengatur posisi elemen secara relatif  */
+  overflow: hidden; /* Mengatur overflow menjadi hidden untuk menyembunyikan konten yang keluar dari batas elemen. */
+  text-align: center; /* Mengatur teks menjadi rata tengah */
+  border: 1px solid red; /* Memberikan border dengan tebal 1px dan warna merah. */
+}
+
+.card i {
+  font-size: 50px; /* Mengatur ukuran font */
+  display: block; /* Mengatur tampilan elemen sebagai blok  */
+  text-align: center; /* Mengatur teks menjadi rata tengah */
+  margin: 25px 0; /* Memberikan margin atas dan bawah */
+  color: red; /* Mengatur warna teks  */
+}
+
+.card h5 {
+  color: white; /* Mengatur warna teks  */
+  font-size: 23px; /* Mengatur ukuran font */
+  margin-bottom: 15px; /* Memberikan margin bawah */
+}
+
+.pra p {
+  color: #fcfc; /* Mengatur warna teks  */
+  font-size: 16px; /* Mengatur ukuran font*/
+  line-height: 27px; /* Mengatur jarak baris */
+  margin-bottom: 25px; /* Memberikan margin bawah */
+  text-align: justify; /*Mengatur teks menjadi rata kanan-kiri  */
+}
+
+.pra p a {
+  background-color: red; /* Mengatur warna latar belakang*/
+  color: white; /* Mengatur warne teks */
+  border: 2px solid white; /* Memberikan border dengan tebal 2px dan warna merah.*/
+  font-weight: bold; /* Mengatur ketebalan font menjadi tebal. */
+  padding: 9px 22px; /* Memberikan padding sebesar 9px pada bagian atas dan bawah, serta 22px pada bagian kiri dan kanan. */
+  border-radius: 30px; /* Memberikan sudut melengkung pada tombol dengan */
+}
+
+.pra p a:hover {
+  background-color: transparent; /* Mengubah warna latar belakang menjadi transparan saat dihover.*/
+  border: 2px solid red; /*Memberikan border dengan tebal 2px dan warna merah saat dihover. */
+  cursor: pointer; /*Mengubah penunjuk kursor menjadi tanda panah saat dihover. */
+}
+
+.skill {
+  background: #191919;
+  width: 100%;
+  padding: 100px 0;
+}
+
+.skill-bar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.skill-bar p {
+  text-align: left;
+}
+
+.skill-box {
+  text-align: right;
+  width: 100%;
+  background-color: white;
+}
+
+.html {
+  width: 90%;
+  background-color: red;
+}
+
+.css {
+  width: 80%;
+  background-color: red;
+}
+
+.Javascript {
+  width: 20%;
+  background-color: red;
+}
+
+.Reactjs {
+  width: 10%;
+  background-color: red;
+}
+
+.php {
+  width: 10%;
+  background-color: red;
+}
+
+.python {
+  width: 10%;
+  background-color: red;
+}
+
+.mysql {
+  width: 10%;
+  background-color: red;
+}
+
+.furebase {
+  width: 10%;
+  background-color: red;
+}
+
+.photoshop {
+  width: 10%;
+  background-color: red;
+}
+
+.canva {
+  width: 80%;
+  background-color: red;
+}
+
+.figma {
+  width: 10%;
+  background-color: red;
+}
+
+.sketch {
+  width: 10%;
+  background-color: red;
+}
